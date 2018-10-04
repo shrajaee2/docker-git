@@ -2,7 +2,7 @@ required: sudo
 services:
   - docker
 before_install:
-  - docker build  shrajaee2/testme .
+  - docker build -t shrajaee2/testme .
 
 scipts:
   - docker run shrajaee2/testme npm run test -- --coverage
